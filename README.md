@@ -13,6 +13,12 @@ Login APIs using MongoDB and Flask
   $ export SECRET_KEY="change_me"
   ```
   
+### Create Schema
+- Execute following to create the DB schema
+  ```sh
+  $ python triplespades.py create_db
+  ```
+
 ### Run the Application
 ```sh
 $ python triplespades.py runserver
