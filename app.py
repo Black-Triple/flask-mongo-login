@@ -6,8 +6,9 @@ from random import randint
 
 
 app = Flask(__name__)
-
-mongoDBConnectionString = "mongodb+srv://apollo21daboss:Welcome123@cluster0-976zt.mongodb.net/test?authSource=admin&replicaSet=Cluster0-shard-0&readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=true";
+fileOpen = open(C:/Maz/Raghav/Python/mongodbconnectionstring.txt, "r")
+mongoDBConnectionString = fileOpen.read()
+fileOpen.close()
 
 @app.route('/')
 def index():
